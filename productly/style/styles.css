@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* --------------------------------------------------------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+main p {
+  color: #544837;
+  font-weight: 500;
+}
+.main_header {
+  float: left;
+  width:100%;
+  padding:15px 0;
+}
+.main_header .container{
+  display: grid;
+  grid-template-columns: 6fr 5fr 3fr;
+  align-items: center;
+}
+
+.main_navigation ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.container {
+  width: 1109px;
+  margin: 0 auto;
+}
+.nav-links {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 14px;
+  line-height: 2em;
+}
+.main_header-buttons ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: end;
+}
+.nav-links a{
+  text-decoration: none;
+  color: black;
+}
+.btn {
+  padding: 14px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.btn-orange {
+  background-color:#FF9900;
+  color: white;
+}
+.btn-ghost {
+  border: 1px solid #BCD0E5;
+  color: #173A56;
+}
+.hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-top: 30px;
+}
+.left-side{
+  max-width: 518px;
+  position: relative;
+  padding-top: 83px;
+  float: left;
+}
+.hero .left-side .text h1{
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 1.2em;
+    font-family: sans-serif;
+}
+.hero .left-side .text p{
+  font-size: 18px;
+  line-height: 1.5em;
+  padding-top: 30px;
+  padding-bottom: 45px;
+}
+.left-side .button ul{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.hero .left-side .btn-ghost{
+  border: none;
+  color: #FF9900;
+}
+.hero .left-side .btn-ghost>span{
+  position: relative;
+  top: 2px;
+}
+.hero .left-side .btn-ghost>img{
+  float: left;
+  margin-right: 5px;
+}
+.hero>img{
+  float: right;
+}
+
+.features{
+  margin-top: 111px;
+}
+
+.features .card{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 45px;
+}
+
+.features .img{
+  width: 50px;
+  height: 50px;
+  background: #7752BE;
+  border-radius: 19px;
+  text-align: center;
+}
+.features article:nth-child(2) .img{
+  background: #FAB005;
+}
+.features article:nth-child(3) .img{
+  background: #F03E3D;
+}
+.features article:last-child .img{
+  background: #4DADF7;
+}
+.features i {
+  color: #fff;
+  line-height: 50px;
+}
+.features h1{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.features h2{
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 1.5em;
+  padding-top: 22px;
+}
+.features p{
+  font-size: 16px;
+  line-height: 1.6em;
+  padding: 13px 0;
+  font-weight: 500;
+}
+
+
+.features .button{
+  padding-top: 49px;
+  clear: both;
+  text-align: center;
+}
+.features-btn {
+  padding: 14px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.features-btn-orange {
+  background-color:#FF9900;
+  color: white;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.design {
+  margin-top: 219px;
+}
+.grid-container h1 {
+  font-size: 36px;
+  font-weight: 36px;
+  color: #2F281E;
+  line-height: 1.5em;
+  margin-bottom: 22px;
+  margin-top: 3px;
+}
+.grid-container p {
+  max-width: 486px;
+}
+.grid-container p.secondparagraph {
+  margin-bottom: 30px;
+}
+.grid-container article h3 {
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.grid-container article p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+.managers {
+  clear: both;
+  margin-top: 101px;
+}
+.managers .left-side{
+  justify-self: end;
+}
+.managers img{
+  float: left;
+}
+.managers article{
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+.managers article p {
+  margin: 0 0;
+  width: 365px;
+}
+.managers article div{
+  height: 35px;
+  width: 35px;
+  border-radius: 13.85px;
+  background: #FF9900;
+  color: #fff;
+  text-align: center;
+  margin-right: 30px;
+}
+.managers article div i {
+  line-height: 35px;
+}
+.marketers{
+  float: left;
+  width: 100%;
+  padding-bottom: 145px;
+  margin:105px 0;
+  border-bottom: 1px solid rgba(188,208,229,0.5);
+}
+footer{
+  width: 100%;
+  float: left;
+  padding-bottom: 83px;
+}
+.footer-grid-container {
+  margin-top: 33px;
+  display: grid;
+  grid-template-areas: ". . . . . first-nav . second-nav . form";
+}
+.footer-nav-1{
+  grid-area: first-nav;
+}
+.footer-nav-2{
+  grid-area: second-nav;
+}
+footer form{
+  grid-area: form;
+}
+footer form input[type="email"]{
+  width: 100%;
+  border: 1px solid #BCD0E5;
+  padding: 10px 15px;
+}
+footer a{
+  text-decoration: none;
+  font-size: 16x;
+  line-height: 2.19em;
+  color: #544837;
+}
+footer form input[type="button"]{
+  background-color: #FF9900;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 21px;
+  line-height: 1.5em;
+  font-family: 'Poppins', sans-serif;
+}

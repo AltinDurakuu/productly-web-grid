@@ -59,7 +59,6 @@ main p {
   font-weight: 500;
 }
 .main_header {
-  float: left;
   width:100%;
   padding:15px 0;
 }
@@ -108,10 +107,12 @@ main p {
   color: #173A56;
 }
 .hero{
+  margin-top: 30px;
+  width: 100%;
+}
+.hero .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
-  margin-top: 30px;
 }
 .left-side{
   max-width: 518px;
@@ -142,6 +143,7 @@ main p {
 .hero .left-side .btn-ghost>span{
   position: relative;
   top: 2px;
+  left: -20px;
 }
 .hero .left-side .btn-ghost>img{
   float: left;
@@ -247,7 +249,7 @@ main p {
 }
 .grid-container article p {
   margin-bottom: 25px;
-  line-height: 1.6;
+  line-height: 1.6em;
 }
 .managers {
   clear: both;
@@ -329,4 +331,76 @@ footer form input[type="button"]{
   margin-top: 21px;
   line-height: 1.5em;
   font-family: 'Poppins', sans-serif;
+}
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  .main_header{
+    float: none;
+  }
+  .main_header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main_navigation ul{
+    padding-left: 310px;
+    display: flex;
+  }
+  .main_navigation ul li{
+    margin-right: 15px;
+  }
+  .main_navigation ul li:last-child{
+    margin-right: 0;
+  }
+  .main_header-buttons ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  .main_header-buttons ul li:last-child{
+    margin-left: 14px;
+  }
+  .hero{
+    display: block;
+  }
+  .hero .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .left-side{
+    float: none;
+  }
+  .left-side .button ul{
+    display: inline-flex;
+    grid-template-columns: 1fr 2fr;
+  }
+  .hero>img{
+    float: none;
+  }
+  .hero .left-side .btn-ghost>span{
+    top: -2px;
+    left: 5px;
+  }
+  .hero .left-side .btn-ghost>img{
+    float: none;
+  }
+  .features .card{
+    display: flex;
+    justify-content: space-between;
+  }
+  .features .card .article{
+    width: 240px;
+    margin-right: 45px;
+  }
+  .grid-container{
+    display: flex;
+    justify-content: space-between;
+  }
+  footer {
+    float: none;
+  }
+  .footer-grid-container{
+    padding-left: 324px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
